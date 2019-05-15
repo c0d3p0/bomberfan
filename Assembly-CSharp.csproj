@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{03578CCC-3DDF-FDF8-E6F6-9FBFDD44F516}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_LINUX;UNITY_STANDALONE;UNITY_STANDALONE_LINUX_API;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_LINUX;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/opt/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/opt/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Fx Explosion Pack\Script\DestroyEffect.cs" />
+     <Compile Include="Assets\Fx Explosion Pack\Script\csLightControl.cs" />
+     <Compile Include="Assets\PorglezompPyroclastics\ExplosionMat.cs" />
+     <Compile Include="Assets\Source\Animation\AimlessBombAnimationManager.cs" />
+     <Compile Include="Assets\Source\Animation\BaseAnimationManager.cs" />
+     <Compile Include="Assets\Source\Animation\BasicEnemyAnimationManager.cs" />
+     <Compile Include="Assets\Source\Animation\CarWheelRotation.cs" />
+     <Compile Include="Assets\Source\Animation\ChibiMummyAnimationTest.cs" />
+     <Compile Include="Assets\Source\Animation\MadBomberAnimationManager.cs" />
+     <Compile Include="Assets\Source\Bomb\ActivationBomb.cs" />
+     <Compile Include="Assets\Source\Bomb\AimlessBomb.cs" />
+     <Compile Include="Assets\Source\Bomb\Bomb.cs" />
+     <Compile Include="Assets\Source\Bomb\ExplosiveDeviceBomb.cs" />
+     <Compile Include="Assets\Source\Bomb\TimerBomb.cs" />
+     <Compile Include="Assets\Source\Character\BaseController.cs" />
+     <Compile Include="Assets\Source\Character\BasicMoveEnemyController.cs" />
+     <Compile Include="Assets\Source\Character\EnemyData.cs" />
+     <Compile Include="Assets\Source\Character\EnemyHitTakenController.cs" />
+     <Compile Include="Assets\Source\Character\MB_CC_BaseController.cs" />
+     <Compile Include="Assets\Source\Character\MB_CC_BomberController.cs" />
+     <Compile Include="Assets\Source\Character\MadBomberData.cs" />
+     <Compile Include="Assets\Source\Character\PlayerHitTakenController.cs" />
+     <Compile Include="Assets\Source\Character\PlayerManager.cs" />
+     <Compile Include="Assets\Source\Character\RandomDirectionEnemyController.cs" />
+     <Compile Include="Assets\Source\Character\RandomMoveEnemyController.cs" />
+     <Compile Include="Assets\Source\Collision\ActivationBombCollisionManager.cs" />
+     <Compile Include="Assets\Source\Collision\BaseHitBoxCollisionManager.cs" />
+     <Compile Include="Assets\Source\Collision\BombCollisionManager.cs" />
+     <Compile Include="Assets\Source\Collision\CuboidStrikeBoxCollisionSender.cs" />
+     <Compile Include="Assets\Source\Collision\EnemyHitBoxCollisionManager.cs" />
+     <Compile Include="Assets\Source\Collision\ItemWeakBlockCollisionManager.cs" />
+     <Compile Include="Assets\Source\Collision\PlayerHitBoxCollisionHandler.cs" />
+     <Compile Include="Assets\Source\Collision\SphereStrikeBoxCollisionSender.cs" />
+     <Compile Include="Assets\Source\Collision\WeakBlockCollisionManager.cs" />
+     <Compile Include="Assets\Source\Effect\BombExplosionParticle.cs" />
+     <Compile Include="Assets\Source\Effect\DebugNuclearExplosionEffect.cs" />
+     <Compile Include="Assets\Source\Effect\DebugStandardExplosionEffect.cs" />
+     <Compile Include="Assets\Source\Effect\NuclearExplosionEffect.cs" />
+     <Compile Include="Assets\Source\Effect\StandardExplosionEfect.cs" />
+     <Compile Include="Assets\Source\Explosion\EnhancedExplosion.cs" />
+     <Compile Include="Assets\Source\Explosion\FourWayExplosion.cs" />
+     <Compile Include="Assets\Source\Explosion\NuclearExplosion.cs" />
+     <Compile Include="Assets\Source\GameConstant\GameAttributes.cs" />
+     <Compile Include="Assets\Source\GameConstant\GameFlag.cs" />
+     <Compile Include="Assets\Source\GameConstant\GameObjectName.cs" />
+     <Compile Include="Assets\Source\GameConstant\LayerName.cs" />
+     <Compile Include="Assets\Source\GameConstant\TagName.cs" />
+     <Compile Include="Assets\Source\Input\PlayerInputHandler.cs" />
+     <Compile Include="Assets\Source\Item\BaseItem.cs" />
+     <Compile Include="Assets\Source\Item\BombAmountIncreaseItem.cs" />
+     <Compile Include="Assets\Source\Item\BombChangeItem.cs" />
+     <Compile Include="Assets\Source\Item\ExplosionChangeItem.cs" />
+     <Compile Include="Assets\Source\Item\ExplosionSizeIncreaseItem.cs" />
+     <Compile Include="Assets\Source\Item\ItemModelAnimationManager.cs" />
+     <Compile Include="Assets\Source\Item\LifeAmountIncreaseItem.cs" />
+     <Compile Include="Assets\Source\Item\MoveSpeedFactorIncreaseItem.cs" />
+     <Compile Include="Assets\Source\Level\BorderBlockGenerator.cs" />
+     <Compile Include="Assets\Source\Level\Boundary.cs" />
+     <Compile Include="Assets\Source\Level\EnemyGenerator.cs" />
+     <Compile Include="Assets\Source\Level\HardBlockGenerator.cs" />
+     <Compile Include="Assets\Source\Level\ItemWeakBlockGenerator.cs" />
+     <Compile Include="Assets\Source\Level\LevelChangeManager.cs" />
+     <Compile Include="Assets\Source\Level\LevelData.cs" />
+     <Compile Include="Assets\Source\Level\LevelExitGenerator.cs" />
+     <Compile Include="Assets\Source\Level\LevelExitManager.cs" />
+     <Compile Include="Assets\Source\Level\PlayerGenerator.cs" />
+     <Compile Include="Assets\Source\Level\PrefabInstantiateData.cs" />
+     <Compile Include="Assets\Source\Level\PrefabInstantiateDataGenerator.cs" />
+     <Compile Include="Assets\Source\Level\WeakBlockGenerator.cs" />
+     <Compile Include="Assets\Source\Light\ActivationBombLightBlink.cs" />
+     <Compile Include="Assets\Source\Light\NormalLightBlink.cs" />
+     <Compile Include="Assets\Source\Light\TimerBombLightBlink.cs" />
+     <Compile Include="Assets\Source\Menu\CharacterSelectManager.cs" />
+     <Compile Include="Assets\Source\Menu\ThankScreenManager.cs" />
+     <Compile Include="Assets\Source\Menu\TitleScreenManager.cs" />
+     <Compile Include="Assets\Source\Physics\PhysicsManager.cs" />
+     <Compile Include="Assets\Source\Render\CollidersRender.cs" />
+     <Compile Include="Assets\Source\Render\FPSDataRender.cs" />
+     <Compile Include="Assets\Source\Render\PlayerHUDRender.cs" />
+     <Compile Include="Assets\Source\Util\BombType.cs" />
+     <Compile Include="Assets\Source\Util\BombUtil.cs" />
+     <Compile Include="Assets\Source\Util\ExplosionType.cs" />
+     <Compile Include="Assets\Source\Util\GameObjectUtil.cs" />
+     <Compile Include="Assets\Source\Util\LayerMaskUtil.cs" />
+     <Compile Include="Assets\Source\Util\MovementUtil.cs" />
+     <Compile Include="Assets\Source\WeakBlockDestroy.cs" />
+     <Compile Include="Assets\Test Data\Minotaur\Script\RotateObject.cs" />
+     <Compile Include="Assets\Test Data\[6]Golem\Scripts\buttons.cs" />
+     <None Include="Assets\Test Data\Earthborn Troll\Shader\Alpha_Texture.shader" />
+     <None Include="Assets\Test Data\Earthborn Troll\Shader\DoubleSided-Light-Spec.shader" />
+     <None Include="Assets\PorglezompPyroclastics\Explosion.shader" />
+     <None Include="Assets\ThirdParty\sky5X\README.txt" />
+     <None Include="Assets\Test Data\SkeletonData\animations.txt" />
+     <None Include="Assets\Test Data\CartoonBusinessZombie\ReadMe.txt" />
+     <None Include="Assets\PorglezompPyroclastics\README.txt" />
+     <None Include="Assets\Shader\Bomber\Bomber Four\Unlit_double.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

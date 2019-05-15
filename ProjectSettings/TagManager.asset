@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Model3D
+  - Light
+  - HitBox
+  - StrikeBox
+  - PhysicBox
+  - ParticleEffect
+  - Model3DFragments
+  - LevelManager
+  - StrikeBoxXRight
+  - StrikeBoxXLeft
+  - StrikeBoxZForward
+  - StrikeBoxZBackward
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PlayerPhysicBox
+  - PlayerGhostPhysicBox
+  - EnemyPhysicBox
+  - EnemyGhostPhysicBox
+  - HardBlockPhysicBox
+  - WeakBlockPhysicBox
+  - 
+  - PlayerHitBox
+  - EnemyHitBox
+  - BombHitBox
+  - HardBlockHitBox
+  - WeakBlockHitBox
+  - ItemHitBox
+  - 
+  - ExplosionStrikeBox
+  - EnemyStrikeBox
+  - EnemyStrikeBoxNonBomb
+  - EnemyStrikeBoxBomb
+  - EnemyStrikeBoxAll
+  - 
+  - 
+  - 
+  - 
+  - BlockOnly
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

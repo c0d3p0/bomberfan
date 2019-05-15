@@ -1,0 +1,18 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BombChangeItemCollision : BaseItemCollision
+{
+	protected override void HandleCollected(Collider collider)
+	{
+		MadBomberData madBomberData = collider.GetComponentInParent<MadBomberData>();
+		Bomb actualBomb = madBomberData.mBombSlots[1].GetComponent<Bomb>();
+		LevelData levelData = GameObject.FindGameObjectWithTag(TagName.LEVEL_MANAGER).GetComponent<LevelData>();
+		GameObject newBombGameObject = levelData.GetBombGameObject(mBombType, actualBomb.mExplosionType);
+		madBomberData.mBombSlots[1] = newBombGameObject;
+		Destroy(gameObject.transform.root.gameObject);
+	}
+
+	public BombType mBombType;
+}
