@@ -1,5 +1,5 @@
 # Bomberfan
-A bomberman like game developed using Unity Game Engine.
+A bomberman like game developed using Unity Game Engine and C# as scripting language.
 <br />
 
 Obs:
