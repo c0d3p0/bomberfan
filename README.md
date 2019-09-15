@@ -11,6 +11,5 @@ You can watch a gameplay [here](https://www.youtube.com/watch?v=iKuuKEjtq84).
 **TO DO**
 <br />
 
--Add sounds.
-<br />
--Add explosion effects.
+- Add sounds. <br />
+- Add explosion effects.
